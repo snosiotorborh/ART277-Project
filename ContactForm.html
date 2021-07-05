@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+   <!-- <link rel="stylesheet" href="restaurant.css"/>-->
+    <style>
+        
+         /*Codes for the Heading and Links*/
+        .header_links{
+           background-color:black;
+            height: 63px;
+            padding: 16px;
+            width:100%;
+            
+            
+        
+           
+        }
+        
+         .first {
+           text-decoration: none;
+          padding:20px;
+             color: white; 
+            font-size: 23px;
+           
+        }
+        
+        
+        
+        .first:hover{
+            background-color: orange;
+            color: white;
+        }
+        
+        
+      
+       
+    
+        
+        
+        
+        
+        
+        
+        /* Codes for the Menu Section */
+        .container{
+            width:100%;
+            display: flex;
+        }
+        
+       .content{
+            text-align: center; 
+            margin: 1rem;
+            border:12px solid black;
+            height: 35rem; 
+            width:100%;
+            border-bottom-left-radius:75px;
+            border-bottom-right-radius: 75px;
+             background: linear-gradient(57deg, orange,cyan);
+            position: relative; 
+          
+        
+        }
+        
+        .content-image{
+            border-radius:25px;
+            border:5px solid orange;
+           
+        }
+        
+        
+        /* codes for the footer*/
+        
+        
+        .footer{
+            display: flex;
+            background-color: gray;
+            
+        }
+        
+        .footer-links{
+            margin:2.5rem;
+        }
+        
+        
+        
+        /*codes for footer image resizing*/
+        .links{
+            width:50px;
+            display: inline-block;
+            margin: 1.5rem;
+            
+        }
+        
+        
+        .no{
+            text-decoration: none;
+        }
+        
+        .partners{
+            text-decoration: none;
+            font-size: 22px;
+            display: block;
+            margin-top: 3rem;
+            float: left;
+        }
+        
+        .for-American{
+            display: flex;
+            width: 100%;
+            height: auto;
+        }
+        
+        .the-flex{
+            width: 100%;
+            position: relative;
+        }
+        
+        figcaption{
+            text-align: center;
+            font-size: 22px;
+            margin-top: 4px;
+        }
+        
+        .imgs{
+            border-radius: 10px;
+        }
+        
+        .order{
+            font-size: 20px;
+            text-decoration: none;
+            color: red;
+        }
+        
+        /*codes for the form*/
+        
+        #message{
+            margin-left: 64px;
+             width: 624px;
+        }
+        
+        #email{
+            margin-left: 53px;
+            height: 20px; 
+            width: 623px;
+            position: relative;
+        }
+        
+        #fullName{
+            margin-left: 60px;
+            height: 20px;
+            width: 300.5px;
+            position: relative;
+        }
+        #lastName{
+            margin-left: 10px;
+            height: 20px;
+            width: 300.5px;
+            position: relative;
+        }
+        
+        form{
+            color: white;
+            border-radius: 20px;
+            animation: animate-this 5s;
+            animation-name: animate-this;
+            animation-duration: 5s;
+        }
+        
+        @keyframes animate-this{
+            from{
+                width: 0px; 
+                height: 0px;
+            }
+            
+            to{
+                width: 80%;
+                height: 80%;
+            }
+        }
+        
+        label{
+            font-size: 20px;
+        }
+        
+        input{
+            text-align: center;
+        }
+        
+        #phone-number{
+            margin-left: 90px;
+            position: relative;
+        }
+        #phone-number, #phone-number2, #phone-number3{
+            width:200px;
+            height: 20px;
+            position: relative;
+        }
+        
+        hr{
+            margin-right: 350px;
+        }
+        
+        select{
+            width: 410px;
+            height:30px;
+            margin-left: 0px;
+            position: relative;
+        }
+        
+        button{
+            background: transparent;
+            border:2px solid white;
+            border-radius: 8px;
+            color: white;
+            font-size:22px;
+            text-transform: uppercase;
+        }
+        
+    </style>
+    
+</head>
+<body style="width:80%; margin: auto; ">
+    <!--The Header section-->
+
+        <div id="backup" class="header_links">
+<center><br>
+          |<a class="first" href="menuicon.html">HOME</a>|<a class="first" href="">ABOUT US</a>|<a class="first" href="OrderForm.html">ORDER NOW</a>|
+            <a class="first" href="">CONTACT</a>|
+<br>
+<br>
+<br>
+    <div style="font-size: 65px; font-family: impact;">AUSTINA BAR'S RESTAURANT</div>
+    
+    </center>     
+    </div  >
+    <br>
+  
+
+ <br><br>
+ <br><br>
+ <br><br>
+    
+    <!-- The Contact Section-->
+<br>
+    <br>
+    <br>
+ 
+    <a img class="links" src="contactus2.jpeg" width="102%" height="650px;"></a>
+        <h1>Contact Form</h1>
+        <h2>Please fill in your information and we will be sending your order in no time. </h2>
+    <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" placeholder="First Name">
+        <input type="text" id="lastName"  placeholder="Last Name"><br><br>
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" placeholder="example@gmail.com"><br><br>
+        <label for="phone-number">Phone*</label> <input type="tel" id="phone-number" placeholder="###">   <input type="tel" id="phone-number2" placeholder="###">   <input type="tel" id="phone-number3" placeholder="###"><br><br>
+        <label  for="Message-Subject">Message Subject*</label>
+        <select>
+        <option value="American Food">Other</option>
+        <option value="American Food">American Food</option>
+        <option value="European Food">European Food</option>
+        <option value="African Food">African Food</option>
+       </select><br><br>
+        <span style="font-size: 20px;" >Message* </span>
+        <input id="message" style=" height: 78px;" type="message"><br><br><br><br><br><br>
+        <hr style="">
+        <button style="height: 34px;" type="reset">Reset Form</button>     <button style="height: 34px; margin-left: 250px;" type="button">Submit Form &rArr;</button>
+    </form>
+   
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <a style="font-size: 23px; text-decoration: none;" href="#backup">Back to top &uarr;</a>
+     <br>
+    <br>
+    <div class="footer">
+    
+    <div class="footer-links">
+        <h3>Our Locations </h3>
+        <address style="font-size: 22px;">
+      <a class="no" style="color: " href="">Kakata city, Margibi County- Liberia.</a><br><br>
+            <a class="no" style="color: " href="">Paynesville,<br> Monrovia  Montserado County- Liberia.</a><br><br>
+            <a class="no" style="color: " href="">Harbel city, Margibi County- Liberia.</a>
+        </address>
+    </div>
+        
+        <div class="footer-links">
+      <h3>Social  Media</h3>
+      <a title="Facebook" href="">
+        <img class="links" src="facebook.png"></a>
+      <a title="Gmail" href=""><img class="links" src="gmail.png"></a>
+     <a title="GitHub" href=""><img class="links" src="github.png"></a>
+        <a title="Instagram" href=""><img class="links" src="instagram.jpg"></a>
+            <a title="Twitter" href=""><img class="links" src="twitter.png"></a>
+            
+    </div>
+        
+        <div class="footer-links">
+      <h3>Our Partners</h3>
+   
+    <a class="partners" href="https://libdelivery.com/browse-by-restaurants/evelyn/">Evelyn's Restaurant</a><br><a class="partners" href="https://libdelivery.com/browse-by-restaurants/diana-restaurant/#av_section_2">Diana Restaurant</a><br>
+        <a class="partners" href="https://libdelivery.com/browse-by-restaurants/sajj-house/">Sajj Restaurant</a>
+    </div>
+    </div>
+</body>
+</html>
